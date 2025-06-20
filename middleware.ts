@@ -5,7 +5,7 @@ import { authMiddleware } from "@clerk/nextjs";
 console.log("✅ Clerk middleware is running");
 
 export default authMiddleware({
-  publicRoutes: ["/", "/sign-in(.*)", "/sign-up(.*)"],
+  publicRoutes: ["/", "/sign-in(.*)", "/sign-up(.*)", "/searchwithresults(.*)"],
   ignoredRoutes: ["/api/webhooks(.*)"], // optional
 });
 
